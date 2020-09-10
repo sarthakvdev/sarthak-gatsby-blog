@@ -4,9 +4,9 @@ date: "2020-09-10T16:58:03.284Z"
 description: How to get things done in real. A step by step guide
 ---
 
-You must have been through those days when we are stuck inside a lazy rut and are unable to get out. Well, you are not alone, we all pass through that time when those 24 hrs look so little in front of the work you have. The biggest question for everyone's how to get things done without procrastinating on the thoughts of completing things and not actually doing them.
+You must have been through those days when we are stuck inside a lazy rut and are unable to get out. Well, you are not alone, we all pass through that time when those 24 hrs look so little in front of the work you have. The biggest question for everyone's **how to get things done without procrastinating** on the thoughts of completing things and not actually doing them.
 But at the end of the day, we all need to know that 24 hrs are more than sufficient to progress towards a goal. All we need to know is that The only thing you can control is how you manage this time for maximum efficiency and minimal stress.
-I have researched and found some steps you can follow with some bonus tips to get your things and done on time.
+> I have researched and found some steps you can follow with some bonus tips to get your things and done on time.
 
 ## Step 1. Set the table and think on paper
 ***
@@ -49,6 +49,8 @@ As *Brian Tracy* has conceptualized this concept in his book Eat that Frog!
 1. The Key to reaching high levels of performance and productivity is to develop the lifelong habit of tackling your major task first thing each morning.
 2. Think about your goals and review them daily. Every morning when you begin, take action on the most important task you can accomplish to achieve your most important goal at the moment.
 
+![Eat that Frog concept](./eat-that-frog.png)
+
 You should implement the same strategy while executing your tasks. Prioritize the tasks that need more work over the easier ones. Getting the hardest task out of your way early on in the day will give you a sense of relief.
 Once the ‘big’ thing of the day is done, it is way easier to focus your energy on the easier and lesser important jobs. It also gives you a sense of accomplishment, which is the right energy booster you need to get things done. Also, your energy and motivation are usually the highest at the beginning of the day. So that is the perfect time to push yourself.
 
@@ -64,6 +66,7 @@ And last, remember Your ability to choose between the important and the unimport
 
 
 ## Step 6. Single Handle Every Task
+***
 Now, As we have started working, we need to know that what’s the importance of focus on the work in hand is. Every single achievement of humankind is preceded by a long period of hard work, concentrated work until the job was done.
 Your ability to select your most important task, to begin it, and then to concentrate on it single-mindedly until it is complete is the key to high levels of performance and personal productivity. Single handling requires that once you begin, you keep working at the task without diversion or distraction until the job is 100 percent complete.”
 
@@ -76,9 +79,13 @@ Keep remembering that urging yourself onwards by repeating the words ‘Back to 
 ## Step 7. Turn off Work and shut down everything when you’re Done for the Day
 ***
 The Last and one of the major parts of being able to do things is to keep yourself from getting exhausted. Do not overburden yourself. If you do it will over-exhaust you and decrease your productivity for the following day.
+
+![Done for the day](./done-for-the-day.jpg)
+
 When you’re done for the day, switch off your work side. Even if you were able to manage the tasks of the day earlier than the finishing office time, give yourself that free time.
 Always remember to relax whenever you can. Treat Yourself when you deserve it. Turning off is very important to be able to restart the next day.
 
+---
 
 ### At last, finally, it’s time for some
 
