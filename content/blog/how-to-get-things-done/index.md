@@ -1,10 +1,7 @@
 ---
-title: How to get things done in real.
-A step by step guide.
-date: "2020-09-10T22:12:03.284Z"
-description: "How to get things done in real.
-A step by step guide"
-
+title: How to get things done in real. A step by step guide
+date: "2020-09-10T16:58:03.284Z"
+description: How to get things done in real. A step by step guide
 ---
 
 You must have been through those days when we are stuck inside a lazy rut and are unable to get out. Well, you are not alone, we all pass through that time when those 24 hrs look so little in front of the work you have. The biggest question for everyone's how to get things done without procrastinating on the thoughts of completing things and not actually doing them.
