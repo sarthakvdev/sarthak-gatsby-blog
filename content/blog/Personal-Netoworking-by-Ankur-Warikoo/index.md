@@ -3,9 +3,7 @@ title: How to Network | Personal Networking by Ankur Warikoo
 date: "2020-10-21T13:26:16.284Z"
 description: These blog contains notes from Personal Networking explained by Ankur Warikoo
 ---
-<img src="https://images.unsplash.com/photo-1545987796-200677ee1011?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjYzOTIxfQ&w=3600" alt="cover" style="width=100%;">
-
-<br>
+<img src="https://images.unsplash.com/photo-1545987796-200677ee1011?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjYzOTIxfQ&w=3600" alt="cover">
 
 ### **Introductory Points**:
 
@@ -16,7 +14,6 @@ description: These blog contains notes from Personal Networking explained by Ank
 - Networking has nothing to do with you being either Introvert or Extrovert.
 - Networking is no more about going to conferences or events showing up in a suit and handing out your stylish business cards. Time has changed, and so has networking.
 
-<br>
 
 ### **Important Points to remember while networking:**
 
@@ -47,12 +44,8 @@ description: These blog contains notes from Personal Networking explained by Ank
 
     - **Third Way:** *Go through someone who is a share connect.* This is how the world trully works, Its a Matrix of trust. Everything flows from trust.
 
-<br>  
 
 ---
-<br>
 
-These points are noted from following video:
-[![Everything Is AWESOME](thumbnail.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "thumbnail")
-
----
+These points are noted from following video, Click to checkout:
+[![Everything Is AWESOME](thumbnail.png)](https://www.youtube.com/watch?v=NZw4hNJGgSQ&feature=youtu.be "thumbnail")
