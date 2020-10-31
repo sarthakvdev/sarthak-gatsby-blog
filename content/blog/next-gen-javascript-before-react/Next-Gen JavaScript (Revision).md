@@ -90,7 +90,7 @@ const returnMe = name => {
 
 
 
-Read more at: [Arrow Function MDN(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+Read more at: [Arrow Function MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
 ---
 
