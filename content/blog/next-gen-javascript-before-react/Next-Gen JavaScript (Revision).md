@@ -23,7 +23,7 @@ Let's get going!
 1. let and const variables
 2. ES6: Arrow Functions
 3. Exports & Imports
-4. C;asses
+4. Classes
 5. Spread and Rest Operators
 6. Destructuring Assignment
 
