@@ -5,7 +5,7 @@ import { rhythm, scale } from "../utils/typography"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
-  let header
+  let header;
 
   if (location.pathname === rootPath) {
     header = (
@@ -41,7 +41,7 @@ const Layout = ({ location, title, children }) => {
             color: `inherit`,
           }}
           to={`/`}
-        >
+        >x
           {title}
         </Link>
       </h3>
