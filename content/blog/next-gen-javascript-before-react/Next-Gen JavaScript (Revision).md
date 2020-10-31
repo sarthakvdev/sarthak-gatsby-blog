@@ -270,23 +270,3 @@ Finally, If you have understood all the Next-JS, it's a very good news. You can 
 I have listed the very important concepts you need to get started with your React , but remember this is not everything.
 
 Thanks for reading, I hope you liked this article.
-
----
-<br>
-
-## Please Subscribe to my Newsletter:
-<label id="input">
-<input type="text" placeholder="email" 
-      style="width: 60%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 7px 0 0 7px;"/>
-<button type="submit" 
-        style="width: 90px;
-              margin-left: 2px;
-              padding: 10px;
-              border-radius: 0 7px 7px 0;
-        ">
-        Submit</button>
-</label>
----
