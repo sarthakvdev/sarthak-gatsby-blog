@@ -1,9 +1,10 @@
-# Next-Gen JavaScript concepts to Master before learning React
-
-
+---
+title: Next-Gen JavaScript concepts to Master before learning React
+date: "2020-10-31T22:39:11.284Z"
+description: This blog will tell your about the Next-Gen JavaScript concepts, which will ease your journey from JavaScript to React.
+---
 
 ![React](https://i2.wp.com/blog.logrocket.com/wp-content/uploads/2020/06/javascript-concepts-before-learning-react.jpg?w=730&ssl=1)
-
 
 
 We all have been through that stage. You've just completed an online course or self-taught from some resources and worked on some projects. And now want to increase your skills by learning very popular JavaScript Library, React. But getting started with your first JavaScript Framework/Library could be scary and you are mostly confused that you're ready take the jump or not. I want you know that, Don't give up right now, and doubting yourself is just natural, we all have had doubts that we aren't ready yet and it is something every developer goes through. 
