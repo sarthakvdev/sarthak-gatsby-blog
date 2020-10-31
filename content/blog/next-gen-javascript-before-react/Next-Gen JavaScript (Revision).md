@@ -255,7 +255,7 @@ We get the same result as above but we save some code. By destructuring, we simp
 
 Read more at: [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
----
+
 
 
 
