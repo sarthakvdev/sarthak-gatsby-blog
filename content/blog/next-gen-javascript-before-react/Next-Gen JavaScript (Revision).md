@@ -31,7 +31,7 @@ Let's get going!
 6. Destructuring Assignment
 
 
-### 1. **let and const** **variables** <a name="example"/>
+### 1. **let and const** **variables**
 
 `let` and `const` basically replace `var` . You use `let` instead of `var` and `const` instead of `var` if you plan on never re-assigning this "variable" (effectively turning it into a constant therefore).
 
