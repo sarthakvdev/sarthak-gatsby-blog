@@ -270,4 +270,4 @@ Thanks for reading, I hope you liked this article.
 ## Comments?
 I would love to get your likes/comments/thoughts on twitter post. If you want to comment on…
 
-Twitter: [go to this twitter post](https://twitter.com/webcrxwler/status/1323139981800476679?s=20)
+Twitter: [go to this twitter post](https://twitter.com/webcrxwler/status/1323170693702275072?s=20)
