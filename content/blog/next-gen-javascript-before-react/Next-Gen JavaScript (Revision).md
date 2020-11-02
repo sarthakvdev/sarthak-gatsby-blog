@@ -259,10 +259,15 @@ Read more at: [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaS
 
 
 
-## Conclusion
+## Parting Words
 
-Finally, If you have understood all the Next-JS, it's very good news. You can safely start learning React JS but, don't rush. I repeat, don't rush. If you are missing some JS concepts, go back, re-learn then and come back. Not knowing some concept will make your React journey miserable.
+Finally, If you have understood all the required JavaScript concepts, it's very good news. You can safely start learning React but, don't rush. I repeat, don't rush. If you are missing some JavaScript concepts, go back, re-learn then and come back. Not knowing some concept will make your React journey miserable.
 
 I have listed the very important concepts you need to get started with your React, but remember this is not everything.
 
 Thanks for reading, I hope you liked this article.
+
+## Comments?
+I would love to get your likes/comments/thoughts on twitter post. If you want to comment on…
+
+Twitter: [go to this twitter post](https://twitter.com/webcrxwler/status/1323139981800476679?s=20)
