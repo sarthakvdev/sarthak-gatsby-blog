@@ -26,7 +26,7 @@ const Layout = ({ location, title, children }) => {
           {title}
         </Link>
       </h1>
-    )
+      )
   } else {
     header = (
       <h3
@@ -41,7 +41,7 @@ const Layout = ({ location, title, children }) => {
             color: `inherit`,
           }}
           to={`/`}
-        >x
+        >
           {title}
         </Link>
       </h3>
@@ -58,10 +58,11 @@ const Layout = ({ location, title, children }) => {
     >
       <header>{header}</header>
       <main>{children}</main>
+      <hr></hr>
       <footer>
-        © {new Date().getFullYear()}, Built with
+        © {new Date().getFullYear()}, Built with ❤️ by
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://sarthakverma.netlify.app">Sarthak</a>
       </footer>
     </div>
   )
