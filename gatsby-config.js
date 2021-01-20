@@ -3,13 +3,12 @@ module.exports = {
     title: `Sarthak Verma's Blog`,
     author: {
       name: `Sarthak Verma`,
-      summary: `who lives and works in Indore building 
-      useful things.`
+      summary: `who lives and works in India building tech related things.`
     },
     description: `A starter blog giving knowledge from Sarthak Verma`,
     siteUrl: `https://sarthakblogs.netlify.app/`,
     social: {
-      twitter: `webcrxwler`
+      twitter: `srthkv`
     }
   },
   plugins: [
