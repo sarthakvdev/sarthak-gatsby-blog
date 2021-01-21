@@ -5,7 +5,7 @@ module.exports = {
       name: `Sarthak Verma`,
       summary: `who lives and works in India building tech related things.`
     },
-    description: `A starter blog giving knowledge from Sarthak Verma`,
+    description: `Sarthak's initiative to share what he knows through this Blog.`,
     siteUrl: `https://sarthakblogs.netlify.app/`,
     social: {
       twitter: `srthkv`
@@ -66,7 +66,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`
+        icon: `content/assets/cube.svg`
       }
     },
     `gatsby-plugin-react-helmet`,
