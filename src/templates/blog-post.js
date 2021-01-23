@@ -48,10 +48,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
         {/* This is the Markdown part */}
         <section 
-          style = {{
-            fontFamily: `Spectral, sans-serif`,
-            fontSize: '1.25em'
-          }}
           dangerouslySetInnerHTML={{ __html: post.html }} 
         />
         <hr
