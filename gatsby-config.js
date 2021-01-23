@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Sarthak Verma's Blog`,
+    title: `Sarthak's Blog`,
     author: {
       name: `Sarthak Verma`,
-      summary: `who lives and works in India building tech related things.`
+      summary: `who lives in India building tech related things.`
     },
-    description: `Sarthak's initiative to share what he knows through this Blog.`,
+    description: `Sarthak's corner on Internet where he shares his Journey and Learnings.`,
     siteUrl: `https://sarthakblogs.netlify.app/`,
     social: {
       twitter: `srthkv`

@@ -12,7 +12,7 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h1
         style={{
-          ...scale(1.0),
+          ...scale(1.1),
           marginBottom: rhythm(1.4),
           marginTop: rhythm(1.4),
           fontFamily: `Inter`

@@ -9,6 +9,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
+import { SiTwitter } from "react-icons/si"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -59,7 +60,7 @@ const Bio = () => {
         Written by <strong>{author.name}</strong>, {author.summary}
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
+          You should follow him on {'   '} <SiTwitter/>
         </a>
       </p>
     </div>
