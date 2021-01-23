@@ -2,18 +2,20 @@ import React from "react"
 import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import NavBar from "./NavBar/NavBar"
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header;
 
-  if (location.pathname === rootPath) {
+  if (location.pathname === rootPath) { // For Main page
     header = (
       <h1
         style={{
-          ...scale(1.2),
+          ...scale(1.0),
           marginBottom: rhythm(1.4),
-          marginTop: rhythm(1.5)
+          marginTop: rhythm(1.4),
+          fontFamily: `Inter`
         }}
       >
         <Link
@@ -27,12 +29,12 @@ const Layout = ({ location, title, children }) => {
         </Link>
       </h1>
       )
-  } else {
+  } else {      // For Blog-post page
     header = (
       <h3
         style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: '0',
+          fontFamily: `Inter`,
+          marginTop: rhythm(1.1),
         }}
       >
         <Link
@@ -59,6 +61,19 @@ const Layout = ({ location, title, children }) => {
         textJustify: 'center'
       }}
     >
+       {/* <ThemeToggler>
+        {({ theme, toggleTheme }) => (
+          <label>
+            <input
+              type="checkbox"
+              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+              checked={theme === 'dark'}
+            />{' '}
+            Dark mode
+          </label>
+        )}
+      </ThemeToggler> */}
+
       <NavBar/>
       <header>{header}</header>
       <main>{children}</main>

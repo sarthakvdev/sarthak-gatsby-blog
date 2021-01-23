@@ -3,7 +3,8 @@ title: How to Network | Personal Networking by Ankur Warikoo
 date: "2020-10-21T13:26:16.284Z"
 description: These blog contains notes from Personal Networking explained by Ankur Warikoo
 ---
-<img src="https://images.unsplash.com/photo-1545987796-200677ee1011?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjYzOTIxfQ&w=3600" alt="cover">
+<br>
+<img src="https://images.unsplash.com/photo-1545987796-200677ee1011?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjYzOTIxfQ&w=3600" alt="Network Web">
 
 ### **Introductory Points**:
 

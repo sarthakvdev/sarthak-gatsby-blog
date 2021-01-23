@@ -19,25 +19,41 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       />
       <article>
         <header>
+          
+          {/* Title of the blog */}
           <h1
             style={{
-              marginTop: rhythm(1),
+              fontFamily: 'Helvetica',
+              marginTop: rhythm(1.0),
               marginBottom: 0,
             }}
           >
             {post.frontmatter.title}
           </h1>
+          
+          {/* Date in header */}
           <p
             style={{
               ...scale(-1 / 5),
               display: `block`,
+              marginTop: '5px',
               marginBottom: rhythm(1),
+              fontFamily: 'Helvetica',
+              fontSize: '0.9em'
             }}
           >
-            {post.frontmatter.date}
+            Published on <b>{post.frontmatter.date}</b>
           </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+
+        {/* This is the Markdown part */}
+        <section 
+          style = {{
+            fontFamily: `Spectral, sans-serif`,
+            fontSize: '1.25em'
+          }}
+          dangerouslySetInnerHTML={{ __html: post.html }} 
+        />
         <hr
           style={{
             marginBottom: rhythm(1),
