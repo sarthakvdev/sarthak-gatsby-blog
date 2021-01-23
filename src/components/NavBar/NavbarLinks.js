@@ -45,7 +45,7 @@ const NavbarLinks = () => {
         <>
             <NavItem to='/404'>Book Notes</NavItem>
             <NavItem href='mailto:sarthakvdev@gmail.com' target='_'>Contact</NavItem>
-            <NavItem to='/'>About</NavItem>
+            <NavItem to='/404'>About</NavItem>
         </>
     )
 }
