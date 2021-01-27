@@ -3,21 +3,22 @@ import cube from './assets/cube.svg'
 import styled from 'styled-components'
 
 const Img = styled.img`
-    width: 32px;
-    height: 32px;
     display: flex;
     margin: 13px 0;
-
+    
     @media (max-width: 600px) {
         width: 30px;
         height: 30px;
-        margin: 10px 0;
+        margin: 1px 0;
     }
 `
 
 const Logo = () => {
     return(
-        <Img src={cube} alt='logo' />
+        <Img src={cube} alt='logo' style={{
+            height: '30px',
+            width: '30px'
+        }} />
     )
 }
 

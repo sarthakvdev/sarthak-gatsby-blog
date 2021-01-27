@@ -75,11 +75,6 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`
       }
-    },
-    `gatsby-plugin-dark-mode`
-
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    }
   ]
 }

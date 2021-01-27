@@ -2,17 +2,26 @@ import React from "react"
 import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import NavBar from "./NavBar/NavBar"
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import DarkModeToggle from 'react-dark-mode-toggle'
+import styled from 'styled-components'
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header;
+
+  const darkModeSwitch = (
+    <DarkModeSwitch
+      onChange={() => toggleDarkMode(prevMode => !prevMode)}
+      checked={darkMode}
+      size={50}
+      speed={1.5}
+    />);
 
   if (location.pathname === rootPath) { // For Main page
     header = (
       <h1
         style={{
-          ...scale(1.1),
+          ...scale(1.0),
           marginBottom: rhythm(1.4),
           marginTop: rhythm(1.4),
           fontFamily: `Inter`
@@ -49,10 +58,10 @@ const Layout = ({ location, title, children }) => {
       </h3>
     )
   }
+
   return (
     
-    <div
-      style={{
+    <div style={{
         marginLeft: `auto`,
         marginRight: `auto`,
         maxWidth: rhythm(24),
@@ -61,21 +70,17 @@ const Layout = ({ location, title, children }) => {
         textJustify: 'center'
       }}
     >
-       {/* <ThemeToggler>
-        {({ theme, toggleTheme }) => (
-          <label>
-            <input
-              type="checkbox"
-              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-              checked={theme === 'dark'}
-            />{' '}
-            Dark mode
-          </label>
-        )}
-      </ThemeToggler> */}
 
-      <NavBar/>
-      <header>{header}</header>
+      <NavBar darkMode={darkMode}/>
+
+      <header style={{
+        display:`flex`,
+        justifyContent: 'space-between',
+        alignItems: 'center'
+      }}>
+        {header}
+        {darkModeSwitch}
+      </header>
       <main>{children}</main>
       <hr></hr>
       <footer>
@@ -86,5 +91,14 @@ const Layout = ({ location, title, children }) => {
     </div>
   )
 }
+
+const DarkModeSwitch = styled(DarkModeToggle)`
+  position: relative;
+  display: inline-block;
+
+  @media (max-width:600px) {
+    size: 20px;
+  }
+`;
 
 export default Layout
