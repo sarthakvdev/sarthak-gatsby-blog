@@ -16,16 +16,24 @@ const NotFoundPage = ({ data, location }) => {
   }, [darkMode]);
 
   function returningUser() {
-    if(localStorage.getItem("dark")) {
-      return true
+    if (typeof localStorage !== 'undefined') { 
+      if(localStorage.getItem("dark")) {
+        return true
+      }
     }
     return false;
   }
 
   // returning the saved preference of darkMode
   function getInitialMode() {
+    let savedMode = false;
+    
     const isReturningUser = returningUser();
-    const savedMode = JSON.parse(localStorage.getItem("dark"));
+    
+    if(typeof localStorage !== 'undefined') {
+      savedMode = JSON.parse(localStorage.getItem("dark"));
+    }
+    
     const userPreferDark = getPreferColorScheme();
     // if mode was saved => light / dark
     if(isReturningUser) {
@@ -39,9 +47,12 @@ const NotFoundPage = ({ data, location }) => {
   }
 
   function getPreferColorScheme() {
-    if (!window.matchMedia) return;
+    if(typeof window !== 'undefined') {
+      if (!window.matchMedia) return;
 
-    return window.matchMedia("(prefers-color-scheme: dark)");
+      return window.matchMedia("(prefers-color-scheme: dark)");
+    }
+    return false;
   }
   // Dark mode code ends --------------
   return (
