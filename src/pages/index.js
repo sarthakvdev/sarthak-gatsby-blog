@@ -17,9 +17,16 @@ const BlogIndex = ({ data, location }) => {
     localStorage.setItem("dark", JSON.stringify(darkMode));
   }, [darkMode]);
 
+  function returningUser() {
+    if(localStorage.getItem("dark")) {
+      return true
+    }
+    return false;
+  }
+
   // returning the saved preference of darkMode
   function getInitialMode() {
-    const isReturningUser = "dark" in localStorage;
+    const isReturningUser = returningUser();
     const savedMode = JSON.parse(localStorage.getItem("dark"));
     const userPreferDark = getPreferColorScheme();
     // if mode was saved => light / dark
