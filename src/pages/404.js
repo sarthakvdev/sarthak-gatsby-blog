@@ -58,7 +58,8 @@ const NotFoundPage = ({ data, location }) => {
   return (
     <div style={{
       backgroundColor: darkMode ? '#212121' : 'inherit',
-      color: darkMode ? '#eee' : 'inherit'
+      color: darkMode ? '#eee' : 'inherit',
+      transition: 'background-color 0.2s ease-out',
     }}>
       <Layout location={location} title={siteTitle} darkMode={darkMode} toggleDarkMode={setDarkMode}>
         <SEO title="404: Not Found" />

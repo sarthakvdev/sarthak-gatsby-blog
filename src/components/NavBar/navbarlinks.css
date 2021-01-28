@@ -6,6 +6,7 @@
     transition: all 200ms ease-in;
     position: relative;
     text-decoration:none;
+    transition: background-color 0.2s ease-out;
 }
 
 .nav-item:after {
@@ -41,6 +42,7 @@ a {
     margin: 0 1vw;
     transition: all 200ms ease-in;
     position: relative;
+    transition: background-color 0.2s ease-out;
 }
 
 .nav-item-dark:after {
