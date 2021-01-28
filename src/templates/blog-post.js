@@ -63,8 +63,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   return (
     <div style={{
       backgroundColor: darkMode ? '#212121' : 'inherit',
-      color: darkMode ? '#eee' : 'inherit',
-      transition: 'background-color 0.2s ease-out',
+      color: darkMode ? '#eee' : 'inherit'
     }}>
       <Layout location={location} title={siteTitle} darkMode={darkMode} toggleDarkMode={setDarkMode}>
         <SEO
