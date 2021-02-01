@@ -14,7 +14,7 @@ const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
       onChange={() => toggleDarkMode(prevMode => !prevMode)}
       checked={darkMode}
       size={50}
-      speed={1.5}
+      speed={3.5}
     />);
 
   if (location.pathname === rootPath) { // For Main page

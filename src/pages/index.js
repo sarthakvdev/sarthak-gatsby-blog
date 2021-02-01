@@ -36,26 +36,27 @@ const BlogIndex = ({ data, location }) => {
       savedMode = JSON.parse(localStorage.getItem("dark"));
     }
     
-    const userPreferDark = getPreferColorScheme();
+    // const userPreferDark = getPreferColorScheme();
     // if mode was saved => light / dark
     if(isReturningUser) {
       return savedMode;
-    } else if(userPreferDark) {
-      return true;
-      // otherwise => light
     } else {
       return false;
     }
+    // else if(userPreferDark) {
+    //   return true;
+    //   // otherwise => light
+    // } 
   }
 
-  function getPreferColorScheme() {
-    if(typeof window !== 'undefined') {
-      if (!window.matchMedia) return;
+  // function getPreferColorScheme() {
+  //   if(typeof window !== 'undefined') {
+  //     if (!window.matchMedia) return;
 
-      return window.matchMedia("(prefers-color-scheme: dark)");
-    }
-    return false;
-  }
+  //     return window.matchMedia("(prefers-color-scheme: dark)");
+  //   }
+  //   return false;
+  // }
 
   return (
     <div style={{

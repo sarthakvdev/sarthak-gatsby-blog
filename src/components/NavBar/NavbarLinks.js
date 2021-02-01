@@ -4,7 +4,7 @@ import './navbarlinks.css'
 
 const NavbarLinks = (props) => {
   const isDark = props.darkMode;
-  console.log(isDark);
+  
     return (
         <div>
             <Link className={isDark ? 'nav-item-dark' : 'nav-item'} to='/404'>Book Notes</Link>

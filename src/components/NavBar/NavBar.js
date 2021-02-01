@@ -3,32 +3,12 @@ import NavbarLinks from './NavbarLinks'
 import Logo from './Logo'
 import styled from 'styled-components'
 
+// CSS Starts
+
 const Navigation = styled.nav`
   height: 8vh;
   display: flex;
-  background-color: #fff;
-  position: flex;
-  justify-content: space-between;
-  border-bottom: 2px solid #33333320;
-  margin: 0 auto;
-  padding: 0 2vw;
-  z-index: 2;
-  align-self: center;
-
-  @media (max-width: 600px) {
-    position: sticky;
-    height: 6vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    left: 0;
-  }
-`
-
-const NavigationDark = styled.div`
-  height: 8vh;
-  display: flex;
-  background-color: #212121;
+  background-color: ${props => props.darkmode ? '#212121' : '#fff'};
   position: flex;
   justify-content: space-between;
   border-bottom: 2px solid #33333320;
@@ -71,26 +51,7 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: #eee;
-    transition: all 0.3s ease-in;
-    top: 7.5vh;
-    left: ${props => (props.open ? "-100%" : "0")};
-  }
-`
-
-const NavboxDark = styled.div`
-  display: flex;
-  height: 100%;
-  justify-content: flex-end;
-  align-items: center;
-
-  @media (max-width: 600px) {
-    flex-direction: column;
-    position: fixed;
-    width: 100%;
-    justify-content: flex-start;
-    padding-top: 10vh;
-    background-color: #333;
+    background-color: ${props => props.darkmode ? '#333' : '#eee'};
     transition: all 0.3s ease-in;
     top: 7.5vh;
     left: ${props => (props.open ? "-100%" : "0")};
@@ -98,7 +59,7 @@ const NavboxDark = styled.div`
 `
 
 const Hamburger = styled.div`
-  background-color: #212121;
+  background-color: ${props => props.darkmode ? '#eee' : '#212121'};
   width: 30px;
   height: 3px;
   transition: all .3s linear;
@@ -109,7 +70,7 @@ const Hamburger = styled.div`
   ::before, ::after {
     width: 30px;
     height: 3px;
-    background-color: #212121;
+    background-color: ${props => props.darkmode ? '#eee' : '#212121'};
     content: "";
     position: absolute;
     transition: all 0.3s linear;
@@ -126,38 +87,9 @@ const Hamburger = styled.div`
     transform: ${props => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
     top: 10px;
   }
-`
+`;
 
-const HamburgerDark = styled.div`
-  background-color: #eee;
-  width: 30px;
-  height: 3px;
-  transition: all .3s linear;
-  align-self: center;
-  position: relative;
-  transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
-
-  ::before, ::after {
-    width: 30px;
-    height: 3px;
-    background-color: #eee;
-    content: "";
-    position: absolute;
-    transition: all 0.3s linear;
-  }
-
-  ::before {
-    transform: ${props =>
-      props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)"};
-    top: -10px;
-  }
-
-  ::after {
-    opacity: ${props => (props.open ? "0" : "1")};
-    transform: ${props => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
-    top: 10px;
-  }
-`
+// CSS over, JS starts
 
 const Navbar = (props) => {
   const [navbarOpen, setNavbarOpen] = useState(false)
@@ -165,28 +97,28 @@ const Navbar = (props) => {
   return (
     props.darkMode ? (
       // Dark mode navigation
-      <NavigationDark>
+      <Navigation darkmode>
       <Logo />
 
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
       >
-        {navbarOpen ? <HamburgerDark open /> : <HamburgerDark />}
+        {navbarOpen ? <Hamburger darkmode open /> : <Hamburger darkmode />}
       </Toggle>
       
       {/* Nav Box On and Off */}
       {navbarOpen ? (
-        <NavboxDark>
+        <Navbox darkmode>
           <NavbarLinks darkMode={props.darkMode} />
-        </NavboxDark>
+        </Navbox>
       ) : (
-        <NavboxDark open>
+        <Navbox darkmode open>
           <NavbarLinks darkMode={props.darkMode} />
-        </NavboxDark>
+        </Navbox>
       )}
       
-    </NavigationDark>
+    </Navigation>
     ) : (
       // light mode navigation
       <Navigation>
