@@ -16,6 +16,7 @@ const Navigation = styled.nav`
   padding: 0 2vw;
   z-index: 2;
   align-self: center;
+  transition: background-color 0.10s ease-out;
 
   @media (max-width: 600px) {
     position: sticky;

@@ -63,6 +63,7 @@ const BlogIndex = ({ data, location }) => {
       backgroundColor: darkMode ? '#212121' : '#fff',
       height: `100%`,
       color: darkMode ? '#fff' : 'inherit',
+      transition: 'background-color 0.10s ease-out'
     }}>
 
       <Layout location={location} title={siteTitle} darkMode={darkMode} toggleDarkMode={setDarkMode}>

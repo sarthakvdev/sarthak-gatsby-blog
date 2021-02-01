@@ -34,31 +34,33 @@ const NotFoundPage = ({ data, location }) => {
       savedMode = JSON.parse(localStorage.getItem("dark"));
     }
     
-    const userPreferDark = getPreferColorScheme();
+    // const userPreferDark = getPreferColorScheme();
     // if mode was saved => light / dark
     if(isReturningUser) {
       return savedMode;
-    } else if(userPreferDark) {
-      return true;
-      // otherwise => light
     } else {
       return false;
     }
+    // else if(userPreferDark) {
+    //   return true;
+    //   // otherwise => light
+    // } 
   }
 
-  function getPreferColorScheme() {
-    if(typeof window !== 'undefined') {
-      if (!window.matchMedia) return;
+  // function getPreferColorScheme() {
+  //   if(typeof window !== 'undefined') {
+  //     if (!window.matchMedia) return;
 
-      return window.matchMedia("(prefers-color-scheme: dark)");
-    }
-    return false;
-  }
+  //     return window.matchMedia("(prefers-color-scheme: dark)");
+  //   }
+  //   return false;
+  // }
   // Dark mode code ends --------------
   return (
     <div style={{
       backgroundColor: darkMode ? '#212121' : 'inherit',
-      color: darkMode ? '#eee' : 'inherit'
+      color: darkMode ? '#eee' : 'inherit',
+      transition: 'background-color 0.10s ease-out'
     }}>
       <Layout location={location} title={siteTitle} darkMode={darkMode} toggleDarkMode={setDarkMode}>
         <SEO title="404: Not Found" />
