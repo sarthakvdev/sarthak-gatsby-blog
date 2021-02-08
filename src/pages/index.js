@@ -60,7 +60,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <div style={{
-      backgroundColor: darkMode ? '#212121' : '#fff',
+      backgroundColor: darkMode ? '#1a1a1a' : '#fff',
       height: `100%`,
       color: darkMode ? '#fff' : 'inherit',
       transition: 'background-color 0.10s ease-out'
@@ -68,7 +68,7 @@ const BlogIndex = ({ data, location }) => {
 
       <Layout location={location} title={siteTitle} darkMode={darkMode} toggleDarkMode={setDarkMode}>
         <SEO title="All posts" />
-        <Bio />
+        <Bio darkMode={darkMode}/>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -79,7 +79,10 @@ const BlogIndex = ({ data, location }) => {
                     marginBottom: rhythm(1 / 4),
                   }}
                 >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  <Link style={{ 
+                      boxShadow: `none`,
+                      color: darkMode ? '#5ea4c3' : '#007acc'
+                    }} to={node.fields.slug}>
                     {title}
                   </Link>
                 </h3>

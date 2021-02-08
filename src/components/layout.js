@@ -8,6 +8,15 @@ import styled from 'styled-components'
 const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header;
+  // Styled DarkModeSwitch
+  const DarkModeSwitch = styled(DarkModeToggle)`
+  position: relative;
+  display: inline-block;
+
+  @media (max-width:600px) {
+    size: 20px;
+  }
+  `;
 
   const darkModeSwitch = (
     <DarkModeSwitch
@@ -86,19 +95,11 @@ const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
       <footer>
         © {new Date().getFullYear()}, Built with ❤️ by
         {` `}
-        <a href="https://sarthakverma.netlify.app">Sarthak</a>
+        <a style={{color: darkMode ? '#5ea4c3' : '#007acc'}} 
+          href="https://sarthakverma.netlify.app">Sarthak</a>
       </footer>
     </div>
   )
 }
-
-const DarkModeSwitch = styled(DarkModeToggle)`
-  position: relative;
-  display: inline-block;
-
-  @media (max-width:600px) {
-    size: 20px;
-  }
-`;
 
 export default Layout

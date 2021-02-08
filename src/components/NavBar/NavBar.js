@@ -8,7 +8,7 @@ import styled from 'styled-components'
 const Navigation = styled.nav`
   height: 8vh;
   display: flex;
-  background-color: ${props => props.darkmode ? '#212121' : '#fff'};
+  background-color: ${props => props.darkmode ? '#1a1a1a' : '#fff'};
   position: flex;
   justify-content: space-between;
   border-bottom: 2px solid #33333320;

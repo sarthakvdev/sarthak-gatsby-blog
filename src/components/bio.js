@@ -3,8 +3,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
 import { SiTwitter } from "react-icons/si"
+import { Link } from 'gatsby'
 
-const Bio = () => {
+const Bio = (props) => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
@@ -52,9 +53,14 @@ const Bio = () => {
       <p>
         Written by <strong>{author.name}</strong>, {author.summary}
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
+        <Link style={{
+          color: props.darkMode ? '#5ea4c3' : '#007acc',
+          boxShadow: 'none',
+        }}
+          href={`https://twitter.com/${social.twitter}`
+        }>
           You should follow him on {'   '} <SiTwitter/>
-        </a>
+        </Link>
       </p>
     </div>
   )

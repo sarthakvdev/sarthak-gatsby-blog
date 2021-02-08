@@ -58,7 +58,7 @@ const NotFoundPage = ({ data, location }) => {
   // Dark mode code ends --------------
   return (
     <div style={{
-      backgroundColor: darkMode ? '#212121' : 'inherit',
+      backgroundColor: darkMode ? '#1a1a1a' : 'inherit',
       color: darkMode ? '#eee' : 'inherit',
       transition: 'background-color 0.10s ease-out'
     }}>

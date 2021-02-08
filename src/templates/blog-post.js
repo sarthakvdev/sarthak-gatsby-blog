@@ -4,6 +4,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import styled from 'styled-components'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -61,11 +62,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
   // Dark Mode code over ---------
 
+  const StyledLink = styled(Link)`
+    color: ${darkMode ? '#5ea4c3' : '#007acc'}
+  `;
+
   return (
     <div style={{
-      backgroundColor: darkMode ? '#212121' : 'inherit',
-      color: darkMode ? '#eee' : 'inherit',
-      transition: 'background-color 0.10s ease-out'
+      backgroundColor: darkMode ? '#1a1a1a' : 'inherit',
+       color: darkMode ? '#f2f2f2' : 'inherit',
+       transition: 'background-color 0.10s ease-out'
     }}>
       <Layout location={location} title={siteTitle} darkMode={darkMode} toggleDarkMode={setDarkMode}>
         <SEO
@@ -99,10 +104,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             >
               Published on <b>{post.frontmatter.date}</b>
             </p>
-          </header>
+          </header> 
 
           {/* This is the Markdown part */}
-          <section 
+          <section
             dangerouslySetInnerHTML={{ __html: post.html }} 
           />
           <hr
@@ -111,7 +116,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             }}
           />
           <footer>
-            <Bio />
+            <Bio darkMode={darkMode}/>
           </footer>
         </article>
 
@@ -127,16 +132,16 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           >
             <li>
               {previous && (
-                <Link to={previous.fields.slug} rel="prev">
+                <StyledLink to={previous.fields.slug} rel="prev">
                   ← {previous.frontmatter.title}
-                </Link>
+                </StyledLink>
               )}
             </li>
             <li>
               {next && (
-                <Link to={next.fields.slug} rel="next">
+                <StyledLink to={next.fields.slug} rel="next">
                   {next.frontmatter.title} →
-                </Link>
+                </StyledLink>
               )}
             </li>
           </ul>

@@ -51,13 +51,13 @@ a {
       width: 0%;
       content: '';
       color: transparent;
-      background: #007acc;
+      background: #5ea4c3;
       height: 1px;
       transition: all 0.4s ease-in;
 }
   
 .nav-item-dark:hover {
-      color: #007acc;
+      color: #68bef8;
 }
 
 .nav-item-dark:hover::after {
