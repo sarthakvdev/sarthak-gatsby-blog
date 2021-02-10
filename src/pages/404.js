@@ -56,6 +56,8 @@ const NotFoundPage = ({ data, location }) => {
   //   return false;
   // }
   // Dark mode code ends --------------
+  
+  
   return (
     <div style={{
       backgroundColor: darkMode ? '#1a1a1a' : 'inherit',

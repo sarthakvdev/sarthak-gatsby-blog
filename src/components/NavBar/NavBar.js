@@ -7,6 +7,7 @@ import styled from 'styled-components'
 
 const Navigation = styled.nav`
   height: 8vh;
+  width: 100%;
   display: flex;
   background-color: ${props => props.darkmode ? '#1a1a1a' : '#fff'};
   position: flex;

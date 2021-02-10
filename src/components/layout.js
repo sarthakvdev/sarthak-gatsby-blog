@@ -8,6 +8,7 @@ import styled from 'styled-components'
 const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header;
+
   // Styled DarkModeSwitch
   const DarkModeSwitch = styled(DarkModeToggle)`
   position: relative;
@@ -23,7 +24,7 @@ const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
       onChange={() => toggleDarkMode(prevMode => !prevMode)}
       checked={darkMode}
       size={50}
-      speed={3.5}
+      speed={1.0}
     />);
 
   if (location.pathname === rootPath) { // For Main page
@@ -69,13 +70,11 @@ const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
   }
 
   return (
-    
     <div style={{
         marginLeft: `auto`,
         marginRight: `auto`,
-        maxWidth: rhythm(24),
+        maxWidth: rhythm(25),
         padding: `${rhythm(0.4)} ${rhythm(1 / 4)}`,
-        margin: '0px auto',
         textJustify: 'center'
       }}
     >
@@ -91,8 +90,10 @@ const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
         {darkModeSwitch}
       </header>
       <main>{children}</main>
-      <hr></hr>
-      <footer>
+      <footer style={{
+        borderTop: `2px solid ${darkMode ? '#333' : '#ccc'}`,
+        padding: '15px 0 5px 0'
+      }}>
         © {new Date().getFullYear()}, Built with ❤️ by
         {` `}
         <a style={{color: darkMode ? '#5ea4c3' : '#007acc'}} 

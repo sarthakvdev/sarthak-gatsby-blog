@@ -9,7 +9,7 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
-  // useState to toggle dark mode state
+  // useState to toggle dark mode 
   const [darkMode, setDarkMode] = useState(getInitialMode());
   
   // to save current preferences in localStorage
