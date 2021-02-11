@@ -8,7 +8,6 @@ const NavbarLinks = (props) => {
     return (
         <div>
             <Link className={isDark ? 'nav-item-dark' : 'nav-item'} to='/404'>Book Notes</Link>
-            <a className={isDark ? 'nav-item-dark' : 'nav-item'} href='mailto:sarthakvdev@gmail.com' target='_'>Contact</a>
             <Link className={isDark ? 'nav-item-dark' : 'nav-item'} to='/about'>About</Link>
         </div>
     )
