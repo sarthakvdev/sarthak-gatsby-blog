@@ -51,16 +51,15 @@ const Bio = (props) => {
         }}
       />
       <p>
-        Written by <strong>{author.name}</strong>, {author.summary}
-        {` `}
+        Written by {' '}
+        <strong>
         <Link style={{
-          color: props.darkMode ? '#5ea4c3' : '#007acc',
-          boxShadow: 'none',
-        }}
-          href={`https://twitter.com/${social.twitter}`
-        }>
-          You should follow him on {'   '} <SiTwitter/>
+            color: props.darkMode ? '#5ea4c3' : '#007acc',
+            boxShadow: 'none',
+          }} href={`https://linktr.ee/sarthakv`} target='_blank'>
+          {author.name}
         </Link>
+        </strong> <br/> {author.summary}
       </p>
     </div>
   )

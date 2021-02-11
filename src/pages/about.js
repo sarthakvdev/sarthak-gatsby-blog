@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import SEO from "../components/seo"
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
@@ -47,9 +46,11 @@ const About = ({data, location}) => {
         }}>
             <Layout location={location} title={siteTitle} darkMode={darkMode} toggleDarkMode={setDarkMode}>
                 <h3>What is Inquisitive?</h3>
-                <p>Welcome to Inquisitive. I attempt to understand and learn the world around me by writing here. Since childhood, I've been that curious child, who never ceased asking questions. And I've no plans to stop being one.</p>
-                <p>I write to document my learning, journey and the observations I find intriguing and thought-provoking.</p>
-                <p>I write my learning and notes from Software development, Designing, Creative Writing and BOOKS!</p>
+                <div>
+                    <p>Welcome to Inquisitive. I attempt to understand and learn the world around me by writing here. Since childhood, I've been that curious child, who never ceased asking questions. And I've no plans to stop being one.</p>
+                    <p>I write to document my learning, journey and the observations I find intriguing and thought-provoking.</p>
+                    <p>I write my learning and notes from Software development, Designing, Creative Writing and BOOKS!</p>
+                </div>
 
                 <h3>Why you should read?</h3>
                 <p>As a Generalist and a tireless learner, I keep uncovering and gaining experience. I plan, write and execute my ambitions; whether they result in a failure or a success, I'm learning from them.</p>

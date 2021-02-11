@@ -1,0 +1,35 @@
+.darkModeToggle {
+    position: relative;
+    display: inline-block;
+}
+
+.footer-icons {
+    float: right;
+    font-size: 1.6em;
+    margin-right: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.icons {
+    color: #79848b;
+    padding-left: 15px;
+}
+
+.icons:hover {
+    font-size: 1.65em;
+}
+
+@media (max-width: 600px) {
+    .darkModeToggle {
+        size: 20px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-icons {
+        float: none;
+        text-align: center;
+    }
+}

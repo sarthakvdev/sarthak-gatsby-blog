@@ -3,28 +3,21 @@ import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import NavBar from "./NavBar/NavBar"
 import DarkModeToggle from 'react-dark-mode-toggle'
-import styled from 'styled-components'
+import { AiFillGithub, AiOutlineTwitter, AiFillLinkedin } from 'react-icons/ai'
+import { MdEmail } from 'react-icons/md'
+import './layout.css'
 
 const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header;
 
-  // Styled DarkModeSwitch
-  const DarkModeSwitch = styled(DarkModeToggle)`
-  position: relative;
-  display: inline-block;
-
-  @media (max-width:600px) {
-    size: 20px;
-  }
-  `;
-
   const darkModeSwitch = (
-    <DarkModeSwitch
+    <DarkModeToggle
       onChange={() => toggleDarkMode(prevMode => !prevMode)}
       checked={darkMode}
       size={50}
-      speed={1.0}
+      speed={2.5}
+      className='darkModeToggle'
     />);
 
   if (location.pathname === rootPath) { // For Main page
@@ -37,13 +30,7 @@ const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
           fontFamily: `Inter`
         }}
       >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
+        <Link style={{ color: `inherit` }} to={`/`} >
           {title}
         </Link>
       </h1>
@@ -90,7 +77,7 @@ const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
         {darkModeSwitch}
       </header>
       <main>{children}</main>
-      <footer style={{
+      <footer className='footer' style={{
         borderTop: `2px solid ${darkMode ? '#333' : '#ccc'}`,
         padding: '15px 0 5px 0'
       }}>
@@ -98,6 +85,13 @@ const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
         {` `}
         <a style={{color: darkMode ? '#5ea4c3' : '#007acc'}} 
           href="https://sarthakverma.netlify.app">Sarthak</a>
+
+        <div className='footer-icons'>
+          <a className='icons' href="https://github.com/sarthakvdev" target="_blank"><AiFillGithub /></a>
+          <a className='icons' href="https://twitter.com/srthkv" target="_blank"><AiOutlineTwitter /></a>
+          <a className='icons' href="https://linkedin.com/in/sarthakv" target="_blank"><AiFillLinkedin /></a>
+          <a className='icons' href="mailto:sarthakvdev@gmail.com" target="_blank"><MdEmail /></a>
+        </div>
       </footer>
     </div>
   )
