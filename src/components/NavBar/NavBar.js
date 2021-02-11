@@ -91,6 +91,10 @@ const Hamburger = styled.div`
   }
 `;
 
+const DiceLogo = styled(Logo)`
+  user-select: none;
+`
+
 // CSS over, JS starts
 
 const Navbar = (props) => {
@@ -100,7 +104,7 @@ const Navbar = (props) => {
     props.darkMode ? (
       // Dark mode navigation
       <Navigation darkmode>
-      <Logo />
+      <DiceLogo />
 
       <Toggle
         navbarOpen={navbarOpen}
@@ -124,7 +128,7 @@ const Navbar = (props) => {
     ) : (
       // light mode navigation
       <Navigation>
-      <Logo />
+      <DiceLogo />
 
       <Toggle
         navbarOpen={navbarOpen}

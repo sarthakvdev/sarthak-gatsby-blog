@@ -27,7 +27,8 @@ const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
           ...scale(1.0),
           marginBottom: rhythm(1.4),
           marginTop: rhythm(1.4),
-          fontFamily: `Inter`
+          fontFamily: `Inter`,
+          userSelect: 'none'
         }}
       >
         <Link style={{ color: `inherit` }} to={`/`} >
@@ -35,12 +36,13 @@ const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
         </Link>
       </h1>
       )
-  } else {      // For Blog-post page
+  } else {      // For any other page than main page
     header = (
       <h3
         style={{
           fontFamily: `Inter`,
           marginTop: rhythm(1.1),
+          userSelect: 'none'
         }}
       >
         <Link

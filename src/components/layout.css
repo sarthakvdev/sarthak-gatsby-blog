@@ -1,3 +1,12 @@
+::selection {
+    background: rgb(255, 217, 0);
+    color: #121212;
+}
+
+a::selection {
+    color: #0078ac;
+}
+
 .darkModeToggle {
     position: relative;
     display: inline-block;

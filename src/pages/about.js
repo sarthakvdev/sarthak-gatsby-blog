@@ -5,10 +5,9 @@ import Layout from '../components/layout'
 const About = ({data, location}) => {
     const siteTitle = data.site.siteMetadata.title
 
-    // Dark mode code starts -------------
+  // Dark mode code starts -------------
   const [darkMode, setDarkMode] = useState(getInitialMode());
 
-  // to save current preferences in localStorage
   useEffect(() => {
     localStorage.setItem("dark", JSON.stringify(darkMode));
   }, [darkMode]);
@@ -22,7 +21,6 @@ const About = ({data, location}) => {
     return false;
   }
 
-  // returning the saved preference of darkMode
   function getInitialMode() {
     let savedMode = false;
     
@@ -35,7 +33,6 @@ const About = ({data, location}) => {
     if(isReturningUser) return savedMode
     else  return false
   }
-
   // Dark Mode code over ---------
 
     return (
@@ -47,9 +44,13 @@ const About = ({data, location}) => {
             <Layout location={location} title={siteTitle} darkMode={darkMode} toggleDarkMode={setDarkMode}>
                 <h3>What is Inquisitive?</h3>
                 <div>
-                    <p>Welcome to Inquisitive. I attempt to understand and learn the world around me by writing here. Since childhood, I've been that curious child, who never ceased asking questions. And I've no plans to stop being one.</p>
-                    <p>I write to document my learning, journey and the observations I find intriguing and thought-provoking.</p>
-                    <p>I write my learning and notes from Software development, Designing, Creative Writing and BOOKS!</p>
+                    <p>Welcome to <strong>Inquisitive - My digital Garden</strong>!
+                      I attempt to understand and learn the world around me by writing here. It's a personal collection of notes. 
+                      This idea is inspired from <a href='https://joelhooks.com/digital-garden' targer='_blank'>digital garden.</a> </p> 
+                    <p>I've been that curious child, who never ceased asking questions. 
+                      And I can say that my journey have been wonderful till here. </p>
+                    <p>I write to document my learning, journey and the observations I find intriguing and thought-provoking.
+                      And also my notes from Software development, Designing, Creative Writing and BOOKS!</p>
                 </div>
 
                 <h3>Why you should read?</h3>

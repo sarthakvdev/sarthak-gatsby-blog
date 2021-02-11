@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
-import { SiTwitter } from "react-icons/si"
 import { Link } from 'gatsby'
 
 const Bio = (props) => {
@@ -45,6 +44,7 @@ const Bio = (props) => {
           marginBottom: 0,
           minWidth: 50,
           borderRadius: `100%`,
+          userSelect: 'none'
         }}
         imgStyle={{
           borderRadius: `50%`,
