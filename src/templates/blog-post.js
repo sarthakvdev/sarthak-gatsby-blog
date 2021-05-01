@@ -83,7 +83,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {/* Title of the blog */}
             <h1
               style={{
-                fontFamily: 'Helvetica',
+                fontFamily: 'SFProBold',
                 marginTop: rhythm(1.0),
                 marginBottom: 0,
               }}

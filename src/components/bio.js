@@ -28,7 +28,10 @@ const Bio = (props) => {
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { 
+    author, 
+    // social 
+  } = data.site.siteMetadata
   return (
     <div
       style={{

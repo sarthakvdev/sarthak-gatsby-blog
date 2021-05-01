@@ -2,14 +2,14 @@ import React from "react"
 import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import NavBar from "./NavBar/NavBar"
-import DarkModeToggle from 'react-dark-mode-toggle'
-import { AiFillGithub, AiOutlineTwitter, AiFillLinkedin } from 'react-icons/ai'
-import { MdEmail } from 'react-icons/md'
-import './layout.css'
+import DarkModeToggle from "react-dark-mode-toggle"
+import { AiFillGithub, AiOutlineTwitter, AiFillLinkedin } from "react-icons/ai"
+import { MdEmail } from "react-icons/md"
+import "./layout.css"
 
-const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
+const Layout = ({ location, title, children, darkMode, toggleDarkMode }) => {
   const rootPath = `${__PATH_PREFIX__}/`
-  let header;
+  let header
 
   const darkModeSwitch = (
     <DarkModeToggle
@@ -17,32 +17,36 @@ const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
       checked={darkMode}
       size={50}
       speed={2.5}
-      className='darkModeToggle'
-    />);
+      className="darkModeToggle"
+    />
+  )
 
-  if (location.pathname === rootPath) { // For Main page
+  if (location.pathname === rootPath) {
+    // For Main page
     header = (
       <h1
         style={{
-          ...scale(1.0),
+          ...scale(1.3),
           marginBottom: rhythm(1.4),
           marginTop: rhythm(1.4),
-          fontFamily: `Inter`,
-          userSelect: 'none'
+          fontFamily: `SFProBold`,
+          userSelect: "none",
         }}
       >
-        <Link style={{ color: `inherit` }} to={`/`} >
+        <Link style={{ color: `inherit` }} to={`/`}>
           {title}
         </Link>
       </h1>
-      )
-  } else {      // For any other page than main page
+    )
+  } else {
+    // For any other page than main page
     header = (
       <h3
         style={{
-          fontFamily: `Inter`,
+          ...scale(0.6),
+          fontFamily: `SFProBold`,
           marginTop: rhythm(1.1),
-          userSelect: 'none'
+          userSelect: "none",
         }}
       >
         <Link
@@ -59,40 +63,88 @@ const Layout = ({ location, title, children, darkMode, toggleDarkMode}) => {
   }
 
   return (
-    <div style={{
+    <div
+      style={{
         marginLeft: `auto`,
         marginRight: `auto`,
         maxWidth: rhythm(25),
         padding: `${rhythm(0.4)} ${rhythm(1 / 4)}`,
-        textJustify: 'center'
+        textJustify: "center",
       }}
     >
+      <NavBar darkMode={darkMode} />
 
-      <NavBar darkMode={darkMode}/>
-
-      <header style={{
-        display:`flex`,
-        justifyContent: 'space-between',
-        alignItems: 'center'
-      }}>
+      <header
+        style={{
+          display: `flex`,
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
         {header}
         {darkModeSwitch}
       </header>
       <main>{children}</main>
-      <footer className='footer' style={{
-        borderTop: `2px solid ${darkMode ? '#333' : '#ccc'}`,
-        padding: '15px 0 5px 0'
-      }}>
+      
+      {/* Footer: contains Name and Icons */}
+      <footer
+        className="footer"
+        style={{
+          borderTop: `2px solid ${darkMode ? "#333" : "#ccc"}`,
+          padding: "15px 0 5px 0",
+        }}
+      >
         © {new Date().getFullYear()}, Built with ❤️ by
         {` `}
-        <a style={{color: darkMode ? '#5ea4c3' : '#007acc'}} 
-          href="https://sarthakverma.netlify.app">Sarthak</a>
+        <a
+          style={{ color: darkMode ? "#5ea4c3" : "#007acc" }}
+          href="https://sarthakverma.netlify.app"
+        >
+          Sarthak
+        </a>
 
-        <div className='footer-icons'>
-          <a className='icons' href="https://github.com/sarthakvdev" target="_blank"><AiFillGithub /></a>
-          <a className='icons' href="https://twitter.com/srthkv" target="_blank"><AiOutlineTwitter /></a>
-          <a className='icons' href="https://linkedin.com/in/sarthakv" target="_blank"><AiFillLinkedin /></a>
-          <a className='icons' href="mailto:sarthakvdev@gmail.com" target="_blank"><MdEmail /></a>
+        {/* Contact Icons */}
+        <div className="footer-icons">
+          <a
+            className="icons"
+            href="https://github.com/sarthakvdev"
+            target="_blank"
+            rel="noreferrer"
+            role="button"
+            aria-label="github"
+          >
+            <AiFillGithub />
+          </a>
+          <a
+            className="icons"
+            href="https://twitter.com/srthkv"
+            target="_blank"
+            rel="noreferrer"
+            role="button"
+            aria-label="twitter"
+          >
+            <AiOutlineTwitter />
+          </a>
+          <a
+            className="icons"
+            href="https://linkedin.com/in/sarthakv"
+            target="_blank"
+            rel="noreferrer"
+            role="button"
+            aria-label="linkedin"
+          >
+            <AiFillLinkedin />
+          </a>
+          <a
+            className="icons"
+            href="mailto:sarthakvdev@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            role="button"
+            aria-label="gmail"
+          >
+            <MdEmail />
+          </a>
         </div>
       </footer>
     </div>

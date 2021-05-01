@@ -1,0 +1,59 @@
+/* SF Pro Regular */
+@font-face {
+    font-family: SFPro;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/SFProDisplay-Regular.woff') format('woff'), url('../fonts/SFProDisplay-Regular.woff2') format('woff2');
+  }
+  
+  /* SF Pro Italics */
+  @font-face {
+    font-family: SFPro;
+    src: url('../fonts/SFProDisplay-RegularItalic.woff') format('woff'), url('../fonts/SFProDisplay-RegularItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+  }
+  
+  /* SF Pro Medium */
+  @font-face {
+    font-family: SFProMedium;
+    src: url('../fonts/SFProDisplay-Medium.woff') format('woff'), url('../fonts/SFProDisplay-Medium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+  }
+  
+  /* SF Pro Bold */
+  @font-face {
+    font-family: SFProBold;
+    src: url('../fonts/SFProDisplay-Bold.woff') format('woff'), url('../fonts/SFProDisplay-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: NYMedium;
+    src: url('../fonts/new-york-medium_regular.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'NewYork Large';
+    src: url('../fonts/new-york-large_regular.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'NewYork Extra Large';
+    src: url('../fonts/new-york-extra-large_regular.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+  }
